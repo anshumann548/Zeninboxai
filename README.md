@@ -94,4 +94,11 @@ Project structure and how to use
 ```
 ### How to use 
 
-clone the repository : https://github.com/anshumann548/Zeninboxai
+**clone the repository :** 
+
+git clone https://github.com/anshumann548/Zeninboxai.git**
+
+**Navigate to project directory :**
+
+cd Zeninboxai
+
