@@ -1,7 +1,7 @@
 Project structure and how to use
 ================================
 
-# Installations & Dependenceies
+## Installations & Dependenceies
 - maven(optional, mvn wrapper added)
 - java-11
 - apache-jmeter 5.6.3
@@ -11,7 +11,7 @@ Project structure and how to use
 
 
 ## Directory Hierarchy
-
+```
 └── zeninbox
     ├── jmeter-scripts
     │   └── zeninf.jmx
@@ -103,20 +103,20 @@ Project structure and how to use
             └── com
                 └── zeninbox
                     └── SessionTest.class
+```
 ### How to use 
 
 **clone the repository :** 
-git clone https://github.com/anshumann548/Zeninboxai.git**
+```git clone https://github.com/anshumann548/Zeninboxai.git```
 
 **Run project using maven wrapper :**
-
+```
 ./mvnw clean install for (linux/MacOS)
  mvnw.cmd clean install for (windows)
+```
+*(There are total 5 test cases , 3 in selenium+TestNg and 1 in RestAssured+TestNg , 1 is jmeter script ) upon running these  command ./mvnw clean install for (linux/MacOS) or  mvnw.cmd clean install (windows) it will run 4 test cases*
 
-// (There are total 5 test cases , 3 in selenium+TestNg and 1 in RestAssured+TestNg , 1 is jmeter script )
-// upon running these  command ./mvnw clean install for (linux/MacOS) or  mvnw.cmd clean install (windows)
-// it will run 4 test cases
-// All Selenium+TestNg tests will pass and RestAssured+TestNg will fail due to bot detection that could be resolved by removing bot detection on controlled staging environment
+***All Selenium+TestNg tests will pass and RestAssured+TestNg will fail due to bot detection that could be resolved by removing bot detection on controlled staging environment***
 
 **To run Jmeter script :**
 Install the apache-jmeter from https://jmeter.apache.org/download_jmeter.cgi
