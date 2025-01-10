@@ -3,20 +3,12 @@ package com.zeninbox;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 
 public class SQLinjectionverifier {
 
-    public void SQLverfier() {
+    public  SQLinjectionverifier() {
 
-        // Set up Chrome driver
-        System.setProperty("webdriver.chrome.driver", "/home/anshumann/Desktop/chromedriver/chromedriver");
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--remote-allow-origins=*");
-
-        // Declare driver
-        WebDriver driver = new ChromeDriver(options);
+         WebDriver driver = driverfactory.getChromeDriver();
 
         try {
             // Open the sign-up page
@@ -24,21 +16,22 @@ public class SQLinjectionverifier {
 
             driver.findElement(By.xpath(locators.firstNameField)).sendKeys(config.getProperty("firstname"));
             driver.findElement(By.xpath(locators.lastNameField)).sendKeys(config.getProperty("lastname"));
-            driver.findElement(By.xpath(locators.emailField)).sendKeys(config.getProperty("email"));
+            driver.findElement(By.xpath(locators.emailField)).sendKeys(config.getProperty("sqlemail"));
             driver.findElement(By.xpath(locators.passwordField)).sendKeys(config.getProperty("password"));
             driver.findElement(By.xpath(locators.confirmpasswordField)).sendKeys(config.getProperty("confirmpassword"));
             driver.findElement(By.xpath(locators.termsbutton)).click();
 
-            WebElement signUpButton;
-            (signUpButton = driver.findElement(By.xpath(locators.signup))).click();
+            WebElement signUpButton = driver.findElement(By.xpath(locators.signup));
 
             // Check if the sign-up button is disabled
-            boolean isButtonDisabled = !signUpButton.isEnabled();
+            boolean isButtonenabled = signUpButton.isEnabled();
 
-            if (isButtonDisabled) {
-                System.out.println("TEST CASE PASSED: Sign-Up button is disabled.");
-            } else {
+            if (isButtonenabled) {
+                signUpButton.click();
                 System.out.println("TEST CASE FAILED: Sign-Up button is enabled.");
+
+            } else {
+                System.out.println("TEST CASE PASSED: Sign-Up button is disabled.");
             }
 
         } catch (Exception e) {

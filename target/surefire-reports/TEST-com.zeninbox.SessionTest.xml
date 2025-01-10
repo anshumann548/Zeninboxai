@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.zeninbox.SessionTest" time="40.804" tests="4" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.zeninbox.SessionTest" time="13.524" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="webdriver.chrome.driver" value="/home/anshumann/Desktop/chromedriver/chromedriver"/>
@@ -11,11 +11,12 @@
     <property name="user.timezone" value="Asia/Kolkata"/>
     <property name="os.name" value="Linux"/>
     <property name="java.vm.specification.version" value="17"/>
+    <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/anshumann/Desktop/Remotewebdriver/zeninbox/zeninbox/target/surefire/surefirebooter288181938615992852.jar /home/anshumann/Desktop/Remotewebdriver/zeninbox/zeninbox/target/surefire 2025-01-10T20-15-41_503-jvmRun1 surefire16326932119556475193tmp surefire_016779784102931346776tmp"/>
+    <property name="sun.java.command" value="/home/anshumann/Desktop/Remotewebdriver/zeninbox/zeninbox/target/surefire/surefirebooter9059085333237801473.jar /home/anshumann/Desktop/Remotewebdriver/zeninbox/zeninbox/target/surefire 2025-01-10T22-20-18_444-jvmRun1 surefire6699642861441403323tmp surefire_012189587497699837436tmp"/>
     <property name="jdk.debug" value="release"/>
+    <property name="test" value="com.zeninbox.SessionTest#charverifiertest"/>
     <property name="surefire.test.class.path" value="/home/anshumann/Desktop/Remotewebdriver/zeninbox/zeninbox/target/test-classes:/home/anshumann/Desktop/Remotewebdriver/zeninbox/zeninbox/target/classes:/home/anshumann/.m2/repository/io/rest-assured/rest-assured/5.3.0/rest-assured-5.3.0.jar:/home/anshumann/.m2/repository/org/apache/groovy/groovy/4.0.6/groovy-4.0.6.jar:/home/anshumann/.m2/repository/org/apache/groovy/groovy-xml/4.0.6/groovy-xml-4.0.6.jar:/home/anshumann/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/anshumann/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/anshumann/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/anshumann/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/anshumann/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/anshumann/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/home/anshumann/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/anshumann/.m2/repository/io/rest-assured/json-path/5.3.0/json-path-5.3.0.jar:/home/anshumann/.m2/repository/org/apache/groovy/groovy-json/4.0.6/groovy-json-4.0.6.jar:/home/anshumann/.m2/repository/io/rest-assured/rest-assured-common/5.3.0/rest-assured-common-5.3.0.jar:/home/anshumann/.m2/repository/io/rest-assured/xml-path/5.3.0/xml-path-5.3.0.jar:/home/anshumann/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/home/anshumann/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/home/anshumann/.m2/repository/net/bytebuddy/byte-buddy/1.12.21/byte-buddy-1.12.21.jar:/home/anshumann/.m2/repository/org/testng/testng/7.4.0/testng-7.4.0.jar:/home/anshumann/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/home/anshumann/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/home/anshumann/.m2/repository/org/seleniumhq/selenium/selenium-java/4.8.0/selenium-java-4.8.0.jar:/home/anshumann/.m2/repository/org/seleniumhq/selenium/selenium-api/4.8.0/selenium-api-4.8.0.jar:/home/anshumann/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.8.0/selenium-chrome-driver-4.8.0.jar:/home/anshumann/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/home/anshumann/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/home/anshumann/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/home/anshumann/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/home/anshumann/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/anshumann/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/anshumann/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/anshumann/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/home/anshumann/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/home/anshumann/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/home/anshumann/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.8.0/selenium-chromium-driver-4.8.0.jar:/home/anshumann/.m2/repository/org/seleniumhq/selenium/selenium-json/4.8.0/selenium-json-4.8.0.jar:/home/anshumann/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v107/4.8.0/selenium-devtools-v107-4.8.0.jar:/home/anshumann/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v108/4.8.0/selenium-devtools-v108-4.8.0.jar:/home/anshumann/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v109/4.8.0/selenium-devtools-v109-4.8.0.jar:/home/anshumann/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.8.0/selenium-devtools-v85-4.8.0.jar:/home/anshumann/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.8.0/selenium-edge-driver-4.8.0.jar:/home/anshumann/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.8.0/selenium-firefox-driver-4.8.0.jar:/home/anshumann/.m2/repository/org/seleniumhq/selenium/selenium-http/4.8.0/selenium-http-4.8.0.jar:/home/anshumann/.m2/repository/dev/failsafe/failsafe/3.3.0/failsafe-3.3.0.jar:/home/anshumann/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.8.0/selenium-ie-driver-4.8.0.jar:/home/anshumann/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.8.0/selenium-remote-driver-4.8.0.jar:/home/anshumann/.m2/repository/io/netty/netty-buffer/4.1.87.Final/netty-buffer-4.1.87.Final.jar:/home/anshumann/.m2/repository/io/netty/netty-codec-http/4.1.87.Final/netty-codec-http-4.1.87.Final.jar:/home/anshumann/.m2/repository/io/netty/netty-codec/4.1.87.Final/netty-codec-4.1.87.Final.jar:/home/anshumann/.m2/repository/io/netty/netty-handler/4.1.87.Final/netty-handler-4.1.87.Final.jar:/home/anshumann/.m2/repository/io/netty/netty-common/4.1.87.Final/netty-common-4.1.87.Final.jar:/home/anshumann/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.87.Final/netty-transport-classes-epoll-4.1.87.Final.jar:/home/anshumann/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.87.Final/netty-transport-classes-kqueue-4.1.87.Final.jar:/home/anshumann/.m2/repository/io/netty/netty-transport-native-epoll/4.1.87.Final/netty-transport-native-epoll-4.1.87.Final.jar:/home/anshumann/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.87.Final/netty-transport-native-kqueue-4.1.87.Final.jar:/home/anshumann/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.87.Final/netty-transport-native-unix-common-4.1.87.Final.jar:/home/anshumann/.m2/repository/io/netty/netty-transport/4.1.87.Final/netty-transport-4.1.87.Final.jar:/home/anshumann/.m2/repository/io/netty/netty-resolver/4.1.87.Final/netty-resolver-4.1.87.Final.jar:/home/anshumann/.m2/repository/io/opentelemetry/opentelemetry-api/1.22.0/opentelemetry-api-1.22.0.jar:/home/anshumann/.m2/repository/io/opentelemetry/opentelemetry-context/1.22.0/opentelemetry-context-1.22.0.jar:/home/anshumann/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.22.0/opentelemetry-exporter-logging-1.22.0.jar:/home/anshumann/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.22.0/opentelemetry-sdk-metrics-1.22.0.jar:/home/anshumann/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.22.0-alpha/opentelemetry-sdk-logs-1.22.0-alpha.jar:/home/anshumann/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.22.0-alpha/opentelemetry-api-logs-1.22.0-alpha.jar:/home/anshumann/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.22.0/opentelemetry-sdk-common-1.22.0.jar:/home/anshumann/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.22.0/opentelemetry-sdk-extension-autoconfigure-spi-1.22.0.jar:/home/anshumann/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.22.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.22.0-alpha.jar:/home/anshumann/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.22.0/opentelemetry-sdk-trace-1.22.0.jar:/home/anshumann/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.22.0/opentelemetry-sdk-1.22.0.jar:/home/anshumann/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.22.0-alpha/opentelemetry-semconv-1.22.0-alpha.jar:/home/anshumann/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/home/anshumann/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/anshumann/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/home/anshumann/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/home/anshumann/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/home/anshumann/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/home/anshumann/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/home/anshumann/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/home/anshumann/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/home/anshumann/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/home/anshumann/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/home/anshumann/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/home/anshumann/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.8.0/selenium-manager-4.8.0.jar:/home/anshumann/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.8.0/selenium-safari-driver-4.8.0.jar:/home/anshumann/.m2/repository/org/seleniumhq/selenium/selenium-support/4.8.0/selenium-support-4.8.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/anshumann"/>
@@ -27,9 +28,9 @@
     <property name="basedir" value="/home/anshumann/Desktop/Remotewebdriver/zeninbox/zeninbox"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/anshumann/Desktop/Remotewebdriver/zeninbox/zeninbox/target/surefire/surefirebooter288181938615992852.jar"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/home/anshumann/Desktop/Remotewebdriver/zeninbox/zeninbox/target/surefire/surefirebooter9059085333237801473.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.13+11-Debian-2deb12u1"/>
     <property name="user.name" value="anshumann"/>
@@ -38,6 +39,7 @@
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="maven.ext.class.path" value="/home/anshumann/.vscode-oss/extensions/oracle.oracle-java-23.0.1/nbcode/java/maven-nblib/netbeans-eventspy.jar"/>
     <property name="localRepository" value="/home/anshumann/.m2/repository"/>
     <property name="java.vendor.url.bug" value="https://bugs.debian.org/openjdk-17"/>
     <property name="java.io.tmpdir" value="/tmp"/>
@@ -54,56 +56,19 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="SQLinjectionverifiertest" classname="com.zeninbox.SessionTest" time="8.086">
+  <testcase name="charverifiertest" classname="com.zeninbox.SessionTest" time="13.244">
+    <system-out><![CDATA[Test case failed
+]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 131.0.6778.85 (3d81e41b6f3ac8bcae63b32e8145c9eb0cd60a2d-refs/branch-heads/6778@{#2285}) on port 29544
+Starting ChromeDriver 131.0.6778.85 (3d81e41b6f3ac8bcae63b32e8145c9eb0cd60a2d-refs/branch-heads/6778@{#2285}) on port 12238
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully on port 29544.
-Jan 10, 2025 8:15:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ChromeDriver was started successfully on port 12238.
+Jan 10, 2025 10:20:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 131
-Jan 10, 2025 8:15:43 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
-WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.8.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="SignUp_With_TempEmail" classname="com.zeninbox.SessionTest" time="0.974">
-    <failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;429&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
-1 expectation failed.
-Expected status code <200> but was <429>.
-
-	at com.zeninbox.SessionTest.SignUp_With_TempEmail(SessionTest.java:37)
-]]></failure>
-  </testcase>
-  <testcase name="charverifiertest" classname="com.zeninbox.SessionTest" time="16.201">
-    <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: /html/body/div[1]/div[1]/div/h1 (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.10.11-amd64&apos;, java.version: &apos;17.0.13&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.85, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:36335}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:36335/devtoo..., se:cdpVersion: 131.0.6778.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 680be78211437729b66b7c4b131e1ce3" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for visibility of element located by By.xpath: /html/body/div[1]/div[1]/div/h1 (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.10.11-amd64', java.version: '17.0.13'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.85, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:36335}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:36335/devtoo..., se:cdpVersion: 131.0.6778.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 680be78211437729b66b7c4b131e1ce3
-	at com.zeninbox.SessionTest.charverifiertest(SessionTest.java:45)
-]]></failure>
-    <system-err><![CDATA[Starting ChromeDriver 131.0.6778.85 (3d81e41b6f3ac8bcae63b32e8145c9eb0cd60a2d-refs/branch-heads/6778@{#2285}) on port 22531
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully on port 22531.
-Jan 10, 2025 8:15:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 131
-Jan 10, 2025 8:15:52 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
-WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.8.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="mailverifiertest" classname="com.zeninbox.SessionTest" time="15.308">
-    <system-err><![CDATA[Starting ChromeDriver 131.0.6778.85 (3d81e41b6f3ac8bcae63b32e8145c9eb0cd60a2d-refs/branch-heads/6778@{#2285}) on port 10472
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully on port 10472.
-Jan 10, 2025 8:16:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 131
-Jan 10, 2025 8:16:08 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+Jan 10, 2025 10:20:20 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
 WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.8.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>

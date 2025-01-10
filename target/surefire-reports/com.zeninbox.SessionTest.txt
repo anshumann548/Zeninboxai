@@ -1,21 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.zeninbox.SessionTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 40.804 s <<< FAILURE! - in com.zeninbox.SessionTest
-com.zeninbox.SessionTest.SignUp_With_TempEmail  Time elapsed: 0.974 s  <<< FAILURE!
-java.lang.AssertionError: 
-1 expectation failed.
-Expected status code <200> but was <429>.
-
-	at com.zeninbox.SessionTest.SignUp_With_TempEmail(SessionTest.java:37)
-
-com.zeninbox.SessionTest.charverifiertest  Time elapsed: 16.201 s  <<< FAILURE!
-org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for visibility of element located by By.xpath: /html/body/div[1]/div[1]/div/h1 (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.10.11-amd64', java.version: '17.0.13'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.85, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:36335}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:36335/devtoo..., se:cdpVersion: 131.0.6778.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 680be78211437729b66b7c4b131e1ce3
-	at com.zeninbox.SessionTest.charverifiertest(SessionTest.java:45)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.524 s - in com.zeninbox.SessionTest

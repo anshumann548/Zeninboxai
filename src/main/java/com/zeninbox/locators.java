@@ -9,4 +9,7 @@ public class locators {
     public static String confirmpasswordField = "/html/body/div[1]/div[1]/div/form/div[4]/div/div/input";
     public static String termsbutton = "//*[@id='terms']";
     public static String signup = "/html/body/div[1]/div[1]/div/form/div[6]/button";
+    public static String otppagetext ="/html/body/div[1]/div[1]/div/h1";
+    public static String signupvalidation ="/html/body/div[2]/div[1]/div/form/div[2]/p";
 }
+

@@ -5,7 +5,6 @@
     <classes>
       <class name="com.zeninbox.SessionTest">
         <methods>
-          <include name="charverifiertest"/>
           <include name="SignUp_With_TempEmail"/>
         </methods>
       </class> <!-- com.zeninbox.SessionTest -->
