@@ -22,33 +22,15 @@ public class SQLinjectionverifier {
             // Open the sign-up page
             driver.get("https://staging.zeninbox.ai/sign-up"); // Update with the actual sign-up page URL
 
-            // Locate the fields for the sign-up form
-            WebElement firstNameField = driver.findElement(By.xpath("/html/body/div[1]/div[1]/div/form/div[1]/div[1]/div/input"));
-            WebElement lastNameField = driver.findElement(By.xpath("/html/body/div[1]/div[1]/div/form/div[1]/div[2]/div/input"));
-            WebElement emailField = driver.findElement(By.xpath("/html/body/div[1]/div[1]/div/form/div[2]/div/input"));
-            WebElement passwordField = driver.findElement(By.xpath("/html/body/div[1]/div[1]/div/form/div[3]/div/div/input"));
-            WebElement confirmpasswordField = driver.findElement(By.xpath("/html/body/div[1]/div[1]/div/form/div[4]/div/div/input"));
-            WebElement termsCheckbox = driver.findElement(By.xpath("//*[@id='terms']"));
-            WebElement signUpButton = driver.findElement(By.xpath("/html/body/div[1]/div[1]/div/form/div[6]/button"));
+            driver.findElement(By.xpath(locators.firstNameField)).sendKeys(config.getProperty("firstname"));
+            driver.findElement(By.xpath(locators.lastNameField)).sendKeys(config.getProperty("lastname"));
+            driver.findElement(By.xpath(locators.emailField)).sendKeys(config.getProperty("email"));
+            driver.findElement(By.xpath(locators.passwordField)).sendKeys(config.getProperty("password"));
+            driver.findElement(By.xpath(locators.confirmpasswordField)).sendKeys(config.getProperty("confirmpassword"));
+            driver.findElement(By.xpath(locators.termsbutton)).click();
 
-            // Fill out the form with special characters in first name and last name
-            firstNameField.clear();
-            firstNameField.sendKeys("John@Doe#");
-
-            lastNameField.clear();
-            lastNameField.sendKeys("Doe$%^");
-
-            emailField.clear();
-            emailField.sendKeys(" ' OR 1=1 --");
-
-            passwordField.clear();
-            passwordField.sendKeys("Passdd@123");
-
-            confirmpasswordField.clear();
-            confirmpasswordField.sendKeys("Passdd@123");
-
-            // Click the terms checkbox
-            termsCheckbox.click();
+            WebElement signUpButton;
+            (signUpButton = driver.findElement(By.xpath(locators.signup))).click();
 
             // Check if the sign-up button is disabled
             boolean isButtonDisabled = !signUpButton.isEnabled();
@@ -60,14 +42,11 @@ public class SQLinjectionverifier {
             }
 
         } catch (Exception e) {
+
         } finally {
             // Close the browser
             driver.quit();
         }
     }
 
-    public static void main(String[] args) {
-        SQLinjectionverifier verifier = new SQLinjectionverifier();
-        verifier.SQLverfier();
-    }
 }

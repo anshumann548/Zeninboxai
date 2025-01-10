@@ -1,7 +1,7 @@
 Project structure and how to use
 ================================
 
-# Installations & Dependencies
+# Installations & Dependenceies
 - maven(optional, mvn wrapper added)
 - java-11
 - apache-jmeter 5.6.3
@@ -11,93 +11,104 @@ Project structure and how to use
 
 
 ## Directory Hierarchy
-```
-|—— zeninbox
-|    |—— pom.xml
-|    |—— src
-|        |—— main
-|            |—— java
-|                |—— com
-|                    |—— zeninbox
-|                        |—— Duplicatemail.java
-|                        |—— SQLinjectionverifier.java
-|                        |—— Specialchars.java
-|        |—— test
-|            |—— java
-|                |—— com
-|                    |—— zeninbox
-|                        |—— SessionTest.java
-|    |—— target
-|        |—— classes
-|            |—— com
-|                |—— zeninbox
-|                    |—— Duplicatemail.class
-|                    |—— SQLinjectionverifier.class
-|                    |—— Specialchars.class
-|        |—— generated-sources
-|            |—— annotations
-|        |—— generated-test-sources
-|            |—— test-annotations
-|        |—— maven-status
-|            |—— maven-compiler-plugin
-|                |—— compile
-|                    |—— default-compile
-|                        |—— createdFiles.lst
-|                        |—— inputFiles.lst
-|                |—— testCompile
-|                    |—— default-testCompile
-|                        |—— createdFiles.lst
-|                        |—— inputFiles.lst
-|        |—— surefire-reports
-|            |—— Surefire suite
-|                |—— Surefire test.html
-|                |—— Surefire test.xml
-|                |—— testng-failed.xml
-|            |—— TEST-com.zeninbox.SessionTest.xml
-|            |—— bullet_point.png
-|            |—— collapseall.gif
-|            |—— com.zeninbox.SessionTest.txt
-|            |—— emailable-report.html
-|            |—— failed.png
-|            |—— index.html
-|            |—— jquery.min.js
-|            |—— junitreports
-|                |—— TEST-com.zeninbox.SessionTest.xml
-|            |—— navigator-bullet.png
-|            |—— old
-|                |—— Surefire suite
-|                    |—— Surefire test.properties
-|                    |—— classes.html
-|                    |—— groups.html
-|                    |—— index.html
-|                    |—— main.html
-|                    |—— methods-alphabetical.html
-|                    |—— methods-not-run.html
-|                    |—— methods.html
-|                    |—— reporter-output.html
-|                    |—— testng.xml.html
-|                    |—— toc.html
-|                |—— index.html
-|            |—— passed.png
-|            |—— skipped.png
-|            |—— testng-failed.xml
-|            |—— testng-reports.css
-|            |—— testng-reports.js
-|            |—— testng-reports1.css
-|            |—— testng-reports2.js
-|            |—— testng-results.xml
-|            |—— testng.css
-|        |—— test-classes
-|            |—— com
-|                |—— zeninbox
-|                    |—— SessionTest.class
-```
+
+└── zeninbox
+    ├── jmeter-scripts
+    │   └── zeninf.jmx
+    ├── mvnw
+    ├── mvnw.cmd
+    ├── pom.xml
+    ├── README.md
+    ├── src
+    │   ├── main
+    │   │   ├── java
+    │   │   │   └── com
+    │   │   │       └── zeninbox
+    │   │   │           ├── config.java
+    │   │   │           ├── Duplicatemail.java
+    │   │   │           ├── locators.java
+    │   │   │           ├── Specialchars.java
+    │   │   │           └── SQLinjectionverifier.java
+    │   │   └── resources
+    │   │       └── config.properties
+    │   └── test
+    │       └── java
+    │           └── com
+    │               └── zeninbox
+    │                   └── SessionTest.java
+    └── target
+        ├── classes
+        │   ├── com
+        │   │   └── zeninbox
+        │   │       ├── config.class
+        │   │       ├── Duplicatemail.class
+        │   │       ├── locators.class
+        │   │       ├── Specialchars.class
+        │   │       └── SQLinjectionverifier.class
+        │   └── config.properties
+        ├── generated-sources
+        │   └── annotations
+        ├── generated-test-sources
+        │   └── test-annotations
+        ├── maven-status
+        │   └── maven-compiler-plugin
+        │       ├── compile
+        │       │   └── default-compile
+        │       │       ├── createdFiles.lst
+        │       │       └── inputFiles.lst
+        │       └── testCompile
+        │           └── default-testCompile
+        │               ├── createdFiles.lst
+        │               └── inputFiles.lst
+        ├── surefire-reports
+        │   ├── bullet_point.png
+        │   ├── collapseall.gif
+        │   ├── com.zeninbox.SessionTest.txt
+        │   ├── emailable-report.html
+        │   ├── failed.png
+        │   ├── index.html
+        │   ├── jquery.min.js
+        │   ├── junitreports
+        │   │   └── TEST-com.zeninbox.SessionTest.xml
+        │   ├── navigator-bullet.png
+        │   ├── old
+        │   │   ├── index.html
+        │   │   └── Surefire suite
+        │   │       ├── classes.html
+        │   │       ├── groups.html
+        │   │       ├── index.html
+        │   │       ├── main.html
+        │   │       ├── methods-alphabetical.html
+        │   │       ├── methods.html
+        │   │       ├── methods-not-run.html
+        │   │       ├── reporter-output.html
+        │   │       ├── Surefire test.properties
+        │   │       ├── testng.xml.html
+        │   │       └── toc.html
+        │   ├── passed.png
+        │   ├── skipped.png
+        │   ├── Surefire suite
+        │   │   ├── Surefire test.html
+        │   │   ├── Surefire test.xml
+        │   │   └── testng-failed.xml
+        │   ├── TEST-com.zeninbox.SessionTest.xml
+        │   ├── testng.css
+        │   ├── testng-failed.xml
+        │   ├── testng-reports1.css
+        │   ├── testng-reports2.js
+        │   ├── testng-reports.css
+        │   ├── testng-reports.js
+        │   └── testng-results.xml
+        └── test-classes
+            └── com
+                └── zeninbox
+                    └── SessionTest.class
 ### How to use 
 
 **clone the repository :** 
 git clone https://github.com/anshumann548/Zeninboxai.git**
 
-**Run projec using maven wrapper :**
+**Run project using maven wrapper :**
 
 ./mvnw clean install for (linux/MacOS)
  mvnw.cmd clean install for (windows)

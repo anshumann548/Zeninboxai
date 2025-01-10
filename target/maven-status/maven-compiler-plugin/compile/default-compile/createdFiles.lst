@@ -1,3 +1,5 @@
 com/zeninbox/Specialchars.class
 com/zeninbox/Duplicatemail.class
 com/zeninbox/SQLinjectionverifier.class
+com/zeninbox/locators.class
+com/zeninbox/config.class
